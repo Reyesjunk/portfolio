@@ -4,84 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="javascript" href="assets/javascript/main.js">
+  <link rel="stylesheet" href="assets.css/grid.css" />
+  <link rel="stylesheet" href="assets/css/main3.css" />
+  
+  <link rel="javascript" href="assets/javascript/main.js" />
   <title>ReyesJunk</title>
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Julius+Sans+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Julius+Sans+One|Open+Sans|Oswald:300,400" rel="stylesheet">
 </head>
 <body>
   <div class="portfolio-container">
     <nav>
       <ul>
-        <li>Ramon Reyes</li>
-        <li>Home</li>
         <li>About Me</li>
         <li>Projects</li>
-        <li>Contact</li>
+        <li><a href="#footer-anchor">Contact</li>
       </ul>
     </nav>
-    <h1>I am Ramon Reyes, a Full-stack developer with an eye for design!</h2>
-    <h1>About Me</h1>
-    <p>My name is Ramon Reyes. I am a web developer and recent graduate of the Front End Web Development Career Path bootcamp at Thinkful. I love coding. I also love the process solving problems and working with others to create new and interesting things. </p> 
-    <p>I am a life-long learner and in my free time I love learning new things, whether it be learning a new language, musical instrument, or learning about different cultures. I want to spend my time learning and growing.</p>
-    
-    <p>I am commited to driven to be the best wed developer that I can be. </p>
+    <section class = "intro-section">
+      <article class = "intro">
+        <h2>Hello, I am <br class="break"/><span class="highlight">Ramon Reyes</span></h2>
+        <h4 class="tagline"> a Full-stack developer with an eye for design!</h4>
+      </article>
+    </section>
+    <section class="about-me-section">
+      <article class="about-me">
+        <h1>About Me</h1>
+        <p>My name is Ramon Reyes. I am a web developer and recent graduate of the Front End Web Development Career Path bootcamp at Thinkful. I love coding. I also love the process solving problems and working with others to create new and interesting things. </p> 
+        <p>I am a life-long learner and in my free time I love learning new things, whether it be learning a new language, musical instrument, or learning about different cultures. I want to spend my time learning and growing.</p>
+        
+        <p>I am commited to driven to be the best wed developer that I can be. </p>
+      </article>
+    </section>
+    <section class="projects-section">
+      <div class="projects-section-container">
+        <h1>Projects</h1>
+        <article class="project-container">
+          <div class="project-title-mobile">
+              <h2>Flixzon</h2>
+              <p>Javascript, Ajax, Jquery, CSS</p>
+            </div>
+          <div class="image-container">
+            <img src="assets/images/flixzon.jpg" alt="flixzon image" />
+            <button><a class="code" href="https://github.com/wshuang6/capstone-vid-search">GitHub</a></button>
+            <button><a class="live" href="#">Live</a></button>
+          </div>
+          <div class="info-container">
+            <div class="project-title">
+              <h2>Flixzon</h2>
+              <p><span class="emphasis">Skills Used</span><br /> 
+              Javascript, Ajax, Jquery, CSS</p>
+            </div>
+            <p><span class="emphasis">Description:</span><br /> Flixzon is a light and clean app designed to help users search for media that they might be interested in watching. The main feature of the app is that it provides information on a seach term's availability in both Netflix and Hulu. It also provides a wikipedia link if it is available. </p>
+          </div>
+        </article>
 
-    <h1>Projects</h1>
-    <div class="project-container">
-      <div class="image-container">
-        <img src="assets/images/flixzon.jpg" alt="flixzon image" />
-      </div>
-      <div class="info-container">
-        <h2>Flixzon</h2>
-        <p><span class="emphasis">Description:</span><br /> Flixzon is a light and clean app designed to help users search for media that they might be interested in watching. The main feature of the app is that it provides information on a seach term's availability in both Netflix and Hulu. It also provides a wikipedia link if it is available. </p>
-       
-       <p> <span class="emphasis">Skills Used</span><br /> 
-       Javascript, Ajax, Jquery, CSS</p>
-    
-        <span class="emphasis">Links</span><br />
-        <a href="https://github.com/wshuang6/capstone-vid-search">GitHub</a>
-        <a heref="#">Live</a>
-      </div>
-    </div>
+        <article class="project-container">
+          <div class="project-title-mobile">
+              <h2>VGQuiz</h2>
+              <p>Javascript, Jquery, CSS</p>
+          </div>
+          <div class="image-container">
+            <img src="assets/images/vgquiz.jpg" />
+            <button><a href="https://github.com/Frankcarvajal/2.1_2.2/tree/master/quizapp">GitHub</a></button>
+            <button><a class="live" href="#">Live</a></button>
+          </div>
+          <div class="info-container">
+            <div class="project-title">
+              <h2>VGQuiz</h2>
+              <p><span class="emphasis">Skills Used</span><br />
+              Javascript, Jquery, CSS</p>
+            </div>
+            <p><span class="emphasis">Description:</span><br /> This a videogame quiz, done in JQuery</p>
+          </div>
+        </article>
 
-    <div class="project-container">
-      <div class="image-container">
-        <img src="assets/images/vgquiz.jpg" />
+        <article class="project-container">
+          <div class="project-title-mobile">
+            <h2>adoptMe</h2>
+            <p>Javascript, NodeJS, MongoDB, Mongoose, CSS, Passport, React, Redux</p>
+          </div>
+          <div class="image-container">
+            <img src="assets/images/adoptme.jpg">
+            <button><a href="https://github.com/pszujewski/pet-adoption-app">GitHub</a></button>
+            <button><a href="https://lit-caverns-27597.herokuapp.com/">Live</a></button>
+          </div>
+          <div class="info-container">
+            <div class="project-title">
+              <h2>adoptMe</h2>
+              <p><span class="emphasis">Skills Used</span><br />
+              Javascript, NodeJS, MongoDB, Mongoose, CSS, Passport, React, Redux</p>
+            </div>
+            <p><span class="emphasis">Description:</span><br /> This is an pet adoption website. Meant to function as a hub for pet shelters and pet seekers </p>
+          </div>
+        </article>
       </div>
-      <div class="info-container">
-        <h2>VGQuiz</h2>
-        <p><span class="emphasis">Description:</span><br /> This a videogame quiz, done in JQuery</p>
-        <p><span class="emphasis">Skills Used</span><br />
-        Javascript, Jquery, CSS</p>
-    
-        <span class="emphasis">Links</span><br />
-        <a href="https://github.com/Frankcarvajal/2.1_2.2/tree/master/quizapp">GitHub</a>
-        <a heref="#">Live</a>
+    </section>
+    <footer><a name="footer-anchor"></a>
+      <div class="footer-container"> 
+        <div>
+          <h1>Get in touch</h1>
+        </div>
+        <div class="contact">
+        <h1>Contact</h1>
+        <p>Name: Ramon A Reyes
+        </p>
+        <p>Email: reyesjunk@gmail.com</p>
+        <p>Github: <a href="https://github.com/Reyesjunk">Reyesjunk</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ramon-reyes-20806b50/">Ramon Reyes</a></p>
+        </div>
       </div>
-    </div>
-
-    <div class="project-container">
-      <div class="image-container">
-        <img src="assets/images/adoptme.jpg">
-      </div>
-      <div class="info-container">
-        <h2>adoptMe</h2>
-        <p><span class="emphasis">Description:</span><br /> This is an pet adoption website. Meant to function as a hub for pet shelters and pet seekers </p>
-        <p><span class="emphasis">Skills Used</span><br />
-        Javascript, NodeJS, MongoDB, Mongoose, CSS, Passport, React, Redux</p>
-    
-        <span class="emphasis">Links</span><br />
-        <a href="https://github.com/pszujewski/pet-adoption-app">GitHub</a>
-        <a href="https://lit-caverns-27597.herokuapp.com/">Live</a>
-      </div>
-    </div>
-    <h1>Contact</h1>
-    <p>Name: Ramon A Reyes
-    </p>
-    <p>Email: reyesjunk@gmail.com</p>
-    <a href="https://github.com/Reyesjunk">GitHub</a>
-    <a href="https://www.linkedin.com/in/ramon-reyes-20806b50/">LinkedIn</a>
+    </footer>
   </div>
   
 </body>

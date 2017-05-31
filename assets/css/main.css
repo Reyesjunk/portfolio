@@ -30,6 +30,9 @@ h2 {
   margin-top: 0;
   font-size: 1.99em;
 }
+.highlight{
+  font-size: 1.414em;
+}
 h3 {
   margin-top: 0;
   font-size: 1.414em;
@@ -75,4 +78,10 @@ and (max-device-width : 568px) {
   .project-container {
     display: block;
   }
+}
+.footer-container {
+  display: flex;
+}
+.contact{
+  padding-left: 50px;
 }
