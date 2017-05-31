@@ -1,0 +1,49 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+}
+h1{
+  font-size: 50px;
+  font-weight: 300;
+}
+h2{
+  color: #ff5a5f;
+}
+.intro-container{
+  background-color: #ebebeb;
+  font-size: 63px;
+  color: white;
+  width: 100%;
+  width: 100vw;
+}
+.tagline{
+  font-size: 24px;
+  font-weight: 200;
+  color: #ff5a5f;
+}
+.intro-container h2 {
+  font-size: 60px;
+}
+.highlight{
+  color: #ff5a5f;
+}
+.about-me-container{
+  background-color: #ff5a5f;
+  color: white;
+
+}
+.about-me{
+}
+
+
+body {
+  width: 600px;
+  margin: 0 auto;
+}
+body, html{
+  margin:0;
+  padding:0;
+}
