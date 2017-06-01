@@ -8,24 +8,25 @@ body {
   display: none;
 }
 button {
-    background: #ebebeb;
-    color: #087E8B;
+    background: white;
+    color: gray;
     font-family: Sans-serif;
     font-size: 20px;
     height: 50px;
     padding: 0;
-    border-radius: 3px;
-    width: 49.5%;
+    border-radius: 4px;
+    width: 49%;
     line-height: 60px;
     text-align: center;
-    border: 0;
+    border: 2px solid #ff5a5f;
     transition: all 0.3s ease 0s;
 }
 a{
   text-decoration: none;
 }
-a:link, a:visited{
-  color: #087E8B;
+button:hover, a:visited{
+  color: white;
+  background-color: #ff5a5f;
 }
 nav ul{
   display: flex;
@@ -46,7 +47,7 @@ h1,h2,h3,h4 {
   font-weight: 300;
   margin: 0;
 }
-h1 {
+section h1, footer h1 {
   font-size: 2.827em;
   color: #ebebeb;
 }
@@ -59,17 +60,17 @@ h3 {
   margin-top: 0;
   font-size: 1.414em;
 }
-img {
+.image-container img {
   border: 2px solid lightgray;
   border-radius: 4px;
 }
 .emphasis {
   font-weight: bold;
   font-size: 1.1em;
-  color: gray;
+  color: #A2A2A2;
 }
-p {
-
+.social-logo {
+  height: 25px;
 }
 .project-container {
   display: flex;
@@ -89,19 +90,20 @@ p {
 }
 
 .intro-section{
-  background-color: #ebebeb;
+  background-color: #dfdfdf;
   width: 100%;
   width: 100vw;
+  border-bottom: 5px solid #5D5D5D;
 }
 .intro{
   padding-top: 30px;
   padding-bottom: 50px;
 }
-.intro h2{
+article.intro h2{
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   color: white;
-  font-size: 55px;
+  font-size: 50px;
   padding: 0
 }
 .intro h4{
@@ -110,8 +112,8 @@ p {
   font-size: 22px;
   color: #ff5a5f;
 }
-.highlight{
-  font-size: 55px;
+.intro h2, .highlight{
+  font-size:55px;
   font-family: 'Oswald', sans-serif;
    color: #ff5a5f;
 }
@@ -139,27 +141,30 @@ p {
   width: 100%;
   width: 100vw;
 }
-.project-title-mobile{
+.mobile{
   display: none;
 }
 
 .info-container{
-  color: #087E8B;
+  color: #5D5D5D;
   margin-left: 100px;
   width: 500px;
 }
 footer{
   margin-top: 200px;
   padding-top: 30px;
-  background-color: #087E8B;
+  padding-bottom: 60px;
+  background-color: #FF757A;
   color: white;
   width: 100%;
   width: 100vw;
 }
 .footer-container{
-  width: 975px;
   margin: 0 auto;
   display: flex;
+}
+footer a{
+  font-size: 50px;
 }
 .contact{
   margin-left: 43%;
@@ -180,6 +185,7 @@ footer{
   }
   img {
     width: 100%;
+    border: 1px solid #ebebeb;
   }
   h1{
     font-size: 2.87em;
@@ -190,8 +196,8 @@ footer{
   .break{
     display: block;
   }
-  .intro h2, .highlight{
-    font-size: 40px;
+  .intro-section.intro h2, .highlight{
+    font-size: 50px;
   }
   h4.tagline{
     font-size: 13px;
@@ -219,13 +225,12 @@ footer{
   button{
     width: 49%;
   }
-  button:link, button:visited{
+
+
+
+  button:hover{
     background: #ff5a5f;
     color: white;
-  }
-  button:hover{
-    background: white;
-    color: #ff5a5f;
   }
   /*.code, .live{
     width: 49%;
@@ -246,7 +251,7 @@ footer{
   .project-title{
     display: none;
   }
-  .project-title-mobile{
+  .mobile{
     display: block;
   }
   .info-container{
@@ -255,6 +260,12 @@ footer{
   }
   .projects-section-container, .footer-container{
     width: 100%;
+  }
+  .projects-section-title{
+    padding-left:  10%;
+  }
+  .projects-section-title h1{
+    color: #dfdfdf;
   }
   .intro{
     width: 80%;
@@ -268,8 +279,9 @@ footer{
     display: block;
   }
   footer{
-  width: 100%;
-  width: 100vw;
+    margin-top: 30px;
+    width: 100%;
+    width: 100vw;
   }
   .contact{
     margin: 0;

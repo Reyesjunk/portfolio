@@ -9,42 +9,37 @@
   
   <link rel="javascript" href="assets/javascript/main.js" />
   <title>ReyesJunk</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Julius+Sans+One|Open+Sans|Oswald:300,400" rel="stylesheet">
+  <script src="https://use.fontawesome.com/31ee3a47d3.js"></script>
 </head>
 <body>
   <div class="portfolio-container">
-    <nav>
-      <ul>
-        <li>About Me</li>
-        <li>Projects</li>
-        <li><a href="#footer-anchor">Contact</li>
-      </ul>
-    </nav>
     <section class = "intro-section">
       <article class = "intro">
-        <h2>Hello, I am <br class="break"/><span class="highlight">Ramon Reyes</span></h2>
-        <h4 class="tagline"> a Full-stack developer with an eye for design!</h4>
+        <h2>Hello, I am <br class="break"/><span class="highlight">Ramon Reyes</span><br />Bridgeport, CT</h2>
+        <h4 class="tagline"> a Full-stack developer with an eye for design.</h4>
       </article>
     </section>
     <section class="about-me-section">
       <article class="about-me">
         <h1>About Me</h1>
-        <p>My name is Ramon Reyes. I am a web developer and recent graduate of the Front End Web Development Career Path bootcamp at Thinkful. I love coding. I also love the process solving problems and working with others to create new and interesting things. </p> 
+        <p>My name is Ramon Reyes. I am a web developer and recent graduate of the Web Development Career Path bootcamp at Thinkful. I love coding and I also love the process solving problems. I love working with others to create new and interesting things. I am based currently based in Bridgeport, Connecticut, but am looking to move into NYC</p> 
         <p>In my free time I enjoy drawing and learning about different cultures.</p>
       </article>
     </section>
     <section class="projects-section">
       <div class="projects-section-container">
-        <h1>Projects</h1>
+        <div class="projects-section-title">
+          <h1>Projects</h1>
+        </div>
         <article class="project-container">
-          <div class="project-title-mobile">
+          <div class="project-title mobile">
               <h2>Flixzon</h2>
               <p>Javascript, Ajax, Jquery, CSS</p>
             </div>
           <div class="image-container">
             <img src="assets/images/flixzon.jpg" alt="flixzon image" />
-            <button><a class="code" href="https://github.com/wshuang6/capstone-vid-search">GitHub</a></button>
-            <button><a class="live" href="#">Live</a></button>
           </div>
           <div class="info-container">
             <div class="project-title">
@@ -52,19 +47,21 @@
               <p><span class="emphasis">Skills Used</span><br /> 
               Javascript, Ajax, Jquery, CSS</p>
             </div>
-            <p><span class="emphasis">Description:</span><br /> Flixzon is a light and clean app designed to help users search for media that they might be interested in watching. The main feature of the app is that it provides information on a seach term's availability in both Netflix and Hulu. It also provides a wikipedia link if it is available. </p>
+            <p><span class="emphasis">Description:</span><br />A video search app that tells you if a video is available on either Netflix or Hulu</p>
+            <div class="button-container">
+              <button onclick="window.location='https://github.com/wshuang6/capstone-vid-search';">GitHub</button>
+              <button>Live</button>
+            </div>
           </div>
         </article>
 
         <article class="project-container">
-          <div class="project-title-mobile">
+          <div class="project-title mobile">
               <h2>VGQuiz</h2>
               <p>Javascript, Jquery, CSS</p>
           </div>
           <div class="image-container">
             <img src="assets/images/vgquiz.jpg" />
-            <button><a href="https://github.com/Frankcarvajal/2.1_2.2/tree/master/quizapp">GitHub</a></button>
-            <button><a class="live" href="#">Live</a></button>
           </div>
           <div class="info-container">
             <div class="project-title">
@@ -73,18 +70,18 @@
               Javascript, Jquery, CSS</p>
             </div>
             <p><span class="emphasis">Description:</span><br /> This a videogame quiz, done in JQuery</p>
+            <button onclick="window.location='https://github.com/Frankcarvajal/2.1_2.2/tree/master/quizapp';">GitHub</button>
+            <button>Live</button>
           </div>
         </article>
 
         <article class="project-container">
-          <div class="project-title-mobile">
+          <div class="project-title mobile">
             <h2>adoptMe</h2>
             <p>Javascript, NodeJS, MongoDB, Mongoose, CSS, Passport, React, Redux</p>
           </div>
           <div class="image-container">
             <img src="assets/images/adoptme.jpg">
-            <button><a href="https://github.com/pszujewski/pet-adoption-app">GitHub</a></button>
-            <button><a href="https://lit-caverns-27597.herokuapp.com/">Live</a></button>
           </div>
           <div class="info-container">
             <div class="project-title">
@@ -93,22 +90,27 @@
               Javascript, NodeJS, MongoDB, Mongoose, CSS, Passport, React, Redux</p>
             </div>
             <p><span class="emphasis">Description:</span><br /> This is an pet adoption website. Meant to function as a hub for pet shelters and pet seekers </p>
+            <button onclick="window.location='https://github.com/pszujewski/pet-adoption-app';">GitHub</button>
+            <button onclick="window.location='https://lit-caverns-27597.herokuapp.com/';">Live</button>
           </div>
         </article>
       </div>
     </section>
-    <footer><a name="footer-anchor"></a>
+    <footer>
       <div class="footer-container"> 
-        <div>
-          <h1>Get in touch</h1>
-        </div>
         <div class="contact">
-        <h1>Contact</h1>
-        <p>Name: Ramon A Reyes
+        <h1>Get in touch</h1>
+        <p>
+          <a href="mailto:reyesjunk@gmail.com?Subject=I%20Want%20to%20hire%20you!" target="_top">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/Reyesjunk">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ramon-reyes-20806b50/">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
         </p>
-        <p>Email: reyesjunk@gmail.com</p>
-        <p>Github: <a href="https://github.com/Reyesjunk">Reyesjunk</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ramon-reyes-20806b50/">Ramon Reyes</a></p>
         </div>
       </div>
     </footer>
