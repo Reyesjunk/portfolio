@@ -3,6 +3,7 @@
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  color: #5D5D5D;
 }
 body {
     margin: 0;
@@ -10,7 +11,7 @@ body {
 }
 h1,h2,h3,h4 {
   font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 }
 h1 {
@@ -24,26 +25,33 @@ h2 {
 h3 {
   font-size: 1.414em;
 }
+img{
+  width: 100%
+}
 button {
     background: white;
-    color: gray;
+    color: #A2A2A2;
     font-family: Sans-serif;
+    font-weight: 700;
     font-size: 20px;
     height: 50px;
     padding: 0;
     border-radius: 4px;
     width: 49%;
-    line-height: 60px;
     text-align: center;
-    border: 2px solid #ff5a5f;
+    border: 2px solid #FF757A;
     transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 button:hover, a:visited, a:link{
   color: white;
-  background: #ff5a5f;
+  background: #FF757A;
 }
 .portfolio-container {
   margin: 0 auto;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .intro-section{
   background-color: #dfdfdf;
@@ -54,7 +62,7 @@ button:hover, a:visited, a:link{
 }
 article.intro h2{
   font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: white;
   font-size: 50px;
   padding: 0
@@ -73,25 +81,28 @@ article.intro h2{
 .about-me-section{
   background: #ff5a5f url("../images/profile_art2.jpg") no-repeat;
   background-size: cover;
-  color: white;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 50px;
+  padding-left: 53%;
+  padding-right: 15%;
 }
-.about-me{
-  width: 90%;
-  padding-left: 58% ;
+.about-me-section p{
+  color: white;
 }
+
 .emphasis {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.1em;
   color: #A2A2A2;
 }
 .projects-section-title{
   padding-left:  10%;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 .projects-section-title h1{
-  color: #dfdfdf;
+  color: #A2A2A2;
 }
 .project-container {
   display: flex;
@@ -99,15 +110,18 @@ article.intro h2{
   padding: 0 10%;
   padding-top: 20px;
 }
- .image-container img {
+.image-container {
+  width: 100%;
+} 
+.image-container img {
   border: 2px solid lightgray;
   border-radius: 4px;
 }
 .info-container {
   margin-top: 0;
   margin-left: 10%;
-  width: 250px;
-  color: #5D5D5D;
+  width: 100%;
+  color: #A2A2A2;
   line-height: 1.5em;
 }
 .break{
@@ -117,7 +131,7 @@ article.intro h2{
   display: none;
 }
 footer{
-  margin-top: 200px;
+  margin-top: 200px auto 0 auto;
   padding-top: 30px;
   padding-bottom: 60px;
   background-color: #FF757A;
@@ -133,82 +147,38 @@ footer p, footer h1{
 .contact-container a:visited, .contact-container a:link{
   background: none;
 }
+.fa{
+  color: white;
+}
 .fa:hover {
-  color: #A2A2A2;
+  color: #5D5D5D;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1000px) {
   button{
     width: 100%;
+    margin-bottom: 8px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 768px) {
-  .portfolio-container{
-    width: 100%;
-  }
-
-  .intro-section, .about-me-section, .projects-section, .image-container img{
-    width: 100%;
-  }
-
   .break{
-    display: block;
+    display: block;  
   }
-
-  h4.tagline{
-    font-size: 30px;
-  }
-
-  .about-me-section{
-    background-size: cover;
-    background-color: #ff5a5f;
-    background-image: url("../images/profile_art_mobile2.jpg");
-    background-repeat: no-repeat;
-  }
-
-  .about-me, .project-container, .intro, nav{
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-    display: block;
-  }
-  
-  .project-container{
-    margin-bottom: 60px;
-  }
-  .projects-section-title h1{
-    color: #dfdfdf;
-  }
-
   .project-title{
-    display: none;
+   display: none;
   }
-  .project-title.mobile p{
-    margin-top: 0;
-  }
-
   .mobile{
-    display: inline;
+  display: inline;
   }
-
-  .info-container, .projects-section-container, .footer-container{
-    width: 100%;
-    margin: 0;
+  .about-me-section{
+    padding: 20px 10% 50px 10%;
   }
-
-  .button-container{
-    margin-top: 30px;
+  .project-container{
+    padding: 0 10%;
+    display: block;
   }
-
-  .contact-container{
-    margin: 0;
+  .info-container{
     padding: 0;
-  }
-
-  footer{
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    margin: 0;
   }
 }
