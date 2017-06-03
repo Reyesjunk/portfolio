@@ -1,9 +1,11 @@
 *{
   box-sizing: border-box;
   text-decoration: none;
+}
+p{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  color: #5D5D5D;
+   color: #5D5D5D;
 }
 body {
     margin: 0;
@@ -11,7 +13,7 @@ body {
 }
 h1,h2,h3,h4 {
   font-family: 'Oswald', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
 }
 h1 {
@@ -26,13 +28,14 @@ h3 {
   font-size: 1.414em;
 }
 img{
-  width: 100%
+  width: 100%;
+  height: 100%;
 }
 button {
     background: white;
     color: #A2A2A2;
-    font-family: Sans-serif;
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     font-size: 20px;
     height: 50px;
     padding: 0;
@@ -47,22 +50,24 @@ button:hover, a:visited, a:link{
   color: white;
   background: #FF757A;
 }
-.portfolio-container {
+
+.intro-section-wrapper{
+  background-color: #dfdfdf;
+  width: 100%;
+  border-bottom: 5px solid #5D5D5D;
+}
+.intro-section, .about-me-section, .contact-section, .projects-section, .project-container {
+  max-width: 1100px;
   margin: 0 auto;
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .intro-section{
-  background-color: #dfdfdf;
-  border-bottom: 5px solid #5D5D5D;
   padding-top: 30px;
   padding-bottom: 50px;
-  padding-left: 10%;
+
 }
 article.intro h2{
   font-family: 'Oswald', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: white;
   font-size: 50px;
   padding: 0
@@ -78,26 +83,28 @@ article.intro h2{
   font-family: 'Oswald', sans-serif;
    color: #ff5a5f;
 }
+.about-me-section-wrapper{
+ background: #ff5a5f url("../images/profile_art2.jpg") no-repeat;
+ background-size: cover; 
+}
 .about-me-section{
-  background: #ff5a5f url("../images/profile_art2.jpg") no-repeat;
-  background-size: cover;
-  width: 100%;
+  margin-left: 50%;
+  margin-right: 20%;
   padding-top: 30px;
   padding-bottom: 50px;
-  padding-left: 53%;
-  padding-right: 15%;
 }
-.about-me-section p{
+.about-me-section p {
   color: white;
 }
-
 .emphasis {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.1em;
   color: #A2A2A2;
 }
+.projects-section{
+  background-color: white;
+}
 .projects-section-title{
-  padding-left:  10%;
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -107,13 +114,10 @@ article.intro h2{
 .project-container {
   display: flex;
   margin-bottom: 100px;
-  padding: 0 10%;
   padding-top: 20px;
 }
-.image-container {
+.image-container{
   width: 100%;
-} 
-.image-container img {
   border: 2px solid lightgray;
   border-radius: 4px;
 }
@@ -140,7 +144,7 @@ footer{
 footer p, footer h1{
   text-align: center;
 }
-.contact-container, .contact-container a{
+.contact-container a{
   font-size: 50px;
   background-color: #FF757A;
 }
@@ -170,12 +174,13 @@ footer p, footer h1{
   .mobile{
   display: inline;
   }
-  .about-me-section{
-    padding: 20px 10% 50px 10%;
-  }
-  .project-container{
+  .projects-section-title{
     padding: 0 10%;
+  }
+  .intro-section, .about-me-section, .project-container {
+    padding: 15px 10% 80px 10%;
     display: block;
+    margin: 0;
   }
   .info-container{
     padding: 0;
