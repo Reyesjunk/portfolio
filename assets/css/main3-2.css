@@ -1,0 +1,261 @@
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+   color: #5D5D5D;
+   line-height: 26px;
+}
+hr {
+  color: ghostwhite;
+  border: solid 3px;
+  width: 100%;
+}
+.my-name {
+  text-align: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+h1 {
+  font-size: 2.827em;
+  color: #ebebeb;
+}
+h2 {
+  color: #ff5a5f;
+  font-size: 1.99em;
+}
+h3 {
+  font-size: 1.414em;
+}
+img{
+  height: 200px;
+  border: 1px solid gainsboro;
+  border-radius: 9px;
+  
+}
+
+button {
+    background: #FF757A;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    height: 50px;
+    padding: 0;
+    border-radius: 4px;
+    width: 140px;
+    text-align: center;
+    border: 2px solid #FF757A;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+button:hover, a:visited, a:link{
+  opacity: .6;
+}
+.portfolio-container {
+  margin: 0 auto;
+}
+.intro-section-wrapper{
+  background-color: #dfdfdf;
+
+  border-bottom: 5px solid #5D5D5D;
+}
+.intro-section, .about-me-section, .contact-section, .projects-section, .project-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 10%
+  
+}
+.intro-section{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.intro-section p {
+  color: white;
+  font-size: 40px;
+  line-height: 48px;
+}
+.project-container {
+  padding-left: 0;
+}
+article.intro h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 50px;
+  padding: 0
+}
+.intro h1{
+  color: white;
+  font-size: 4em;
+}
+.intro h4{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #ff5a5f;
+}
+.intro h2, .highlight{
+  font-size:40px;
+  font-family: 'Roboto', sans-serif;
+   color: #ff5a5f;
+}
+.about-me-section-wrapper{
+ background: #ff5a5f url("../images/profile_art2.jpg") no-repeat;
+ background-size: cover; 
+}
+.about-me-section{
+  margin-left: 30%;
+  margin-right: 20%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about-me-section p {
+  color: white;
+}
+
+.skills h2{
+  color: white;
+}
+.emphasis {
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #A2A2A2;
+}
+.projects-section{
+  background-color: white;
+}
+.projects-section-title{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.projects-section-title h1{
+  color: #A2A2A2;
+}
+.project-container {
+
+  margin-bottom: 100px;
+  padding-top: 20px;
+
+}
+.image-container{
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  width: 204px;
+  height: 163px;
+  display: inline-block;
+}
+.info-container {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-left: 100px;
+}
+.break{
+  display: none;
+}
+.mobile{
+  display: none;
+}
+footer{
+  margin-top: 100px auto 0 auto;
+  /*padding-top: 30px;
+  padding-bottom: 60px;*/
+  background-color: #FF757A;
+  color: white;
+  padding-bottom: 20px;
+}
+
+footer p, footer h1{
+  text-align: center;
+  margin: 0;
+}
+footer h1 {
+  padding-top: 25px;
+  padding-bottom: 0;
+  font-size: 35px;
+}
+.contact-container a{
+  font-size: 40px;
+  background-color: #FF757A;
+}
+.contact-container a:visited, .contact-container a:link{
+  background: none;
+}
+.fa{
+  color: white;
+}
+.fa:hover {
+  color: #5D5D5D;
+}
+
+/*@media only screen and (min-width: 769px) and (max-width: 1000px) {
+  button{
+    width: 30%;
+    margin-bottom: 8px;
+  }
+}*/
+/*@media only screen and (min-width: 769px) and (max-width: 1200px)  {
+   .intro-section, .project-container {
+     padding-left: 10%;
+   }
+  .about-me-section{
+    margin-left: 45%;
+    margin-right: 20%;
+    padding-top: 30px;
+    width: 400px;
+    padding-bottom: 50px;
+  }
+    .projects-section-title{
+    padding: 0 10%;
+  }
+}*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .break{
+    display: block;  
+  }
+  .project-title{
+   display: none;
+  }
+  .mobile{
+  display: inline;
+  }
+  .projects-section-title{
+    padding: 0 10%;
+  }
+  .intro-section, .about-me-section, .project-container {
+    padding: 15px 10% 80px 0;
+    display: block;
+    margin: 0;
+  }
+  .info-container{
+    padding: 0;
+    margin: 0;
+  }
+  .info-container {
+    width: 100%;
+  }
+  img {
+   width: 100%;
+   height: 100%;
+  }
+  .about-me-section, .intro-section {
+    margin-left: 10%;
+  }
+  .intro-section p {
+    color: white;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom:0;
+  }
+}

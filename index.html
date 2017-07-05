@@ -4,22 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets.css/grid.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/main3.css" />
+  <link rel="stylesheet" href="assets/css/main3-2.css" />
   
   <link rel="javascript" href="assets/javascript/main.js" />
   <title>ReyesJunk</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:200,300,400" rel="stylesheet">
   <script src="https://use.fontawesome.com/31ee3a47d3.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
 </head>
 <body>
-  <div class="portfolio-container">
+   <div class="portfolio-container">
+    <section>
     <div class="intro-section-wrapper">
     <section class = "intro-section">
       <article class = "intro">
-        <h2>Hello, I am <br class="break"/><span class="highlight">Ramon Reyes</span><br />Bridgeport, CT</h2>
-        <h4 class="tagline"> a full-stack developer with an eye for design.</h4>
+        
+        <p> Salut, I am <span class="highlight">Ramon Reyes</span>,<br /> a <span class="highlight">Fullstack Developer</span> and <span class="highlight">Graphic Designer</span></p>
       </article>
     </section>
     </div>
@@ -27,70 +29,51 @@
     <section class="about-me-section">
       <article class="about-me">
         <h1>About me</h1>
-        <p>My name is Ramon Reyes. I am a web developer and recent graduate of the Web Development bootcamp at Thinkful. I love coding and I also love the process solving problems. I love working with others to create new and interesting things. I am currently based in Bridgeport, Connecticut, but am looking to move to NYC.</p> 
-        <p>In my free time I enjoy drawing and learning about different cultures.</p>
+        <p>Languages: Javascript, Python<br />
+          Frameworks: React, Redux, NodeJs, JQuery</p>
+        <p>My name is Ramon Reyes. I am a New York City based full stack web developer. and recent graduate of the Web Development bootcamp at Thinkful. I love coding and the challenging problems it allows me to solve. I focus on collaboration and how working together lets us tackle new and important issues and build creative solutions.</p> 
+        <p>In my free time I draw and explore diverse cultures.</p>
+      </article>
+      <article class="skills">
+        <h2>Skills: Javascript, React, Redux, MongoDB, Postgress, JQuery, Html/CSS</h2>
+
       </article>
     </section>
+
     </div>
     <section class="projects-section">
-      <div class="projects-section-container">
+      <!--<div class="projects-section-container">-->
         <div class="projects-section-title">
           <h1>Projects</h1>
         </div>
+       
         <article class="project-container">
           <div class="project-title mobile">
-              <h2>Flixzon</h2>
-              <p><span class="emphasis">Skills Used</span><br />Javascript, Ajax, Jquery, CSS</p>
-          </div>
-          <div class="image-container">
-            <img src="assets/images/flixzon.jpg" alt="flixzon image" />
-          </div>
+              <h2>Rephrase</h2>
+              <p>Javascript, Jquery, CSS</p>
+          </div>      
+            <img src="assets/images/rephrase.jpg" />
           <div class="info-container">
             <div class="project-title">
-              <h2>Flixzon</h2>
-              <p><span class="emphasis">Skills Used</span><br /> 
-              Javascript, Ajax, Jquery, CSS</p>
+              <h2>Rephrase</h2>
+              <p><i>MongoDB, NodeJs, OAuth2, Socket.io, Google Translate API</i></p>
             </div>
-            <p><span class="emphasis">Description</span><br />A video search app that tells you if a video is available on either Netflix or Hulu</p>
-            <div class="button-container">
-              <button onclick="window.location='https://github.com/wshuang6/capstone-vid-search';">GitHub</button>
-              <button>Live</button>
-            </div>
+            <p>Rephrase connects people of different languages. It offers speech to translations and chatrooms with messages instantly translated to your native tongue.</p>
+            <button onclick="window.location='https://github.com/pszujewski/rephrase-v2.0.0';">GitHub</button>
+            <button onClick="window.location='http://rephrase-it.herokuapp.com/';">Live</button>
           </div>
         </article>
-
-        <article class="project-container">
-          <div class="project-title mobile">
-              <h2>VGQuiz</h2>
-              <p><span class="emphasis">Skills Used</span><br />Javascript, Jquery, CSS</p>
-          </div>
-          <div class="image-container">
-            <img src="assets/images/vgquiz.jpg" />
-          </div>
-          <div class="info-container">
-            <div class="project-title">
-              <h2>VGQuiz</h2>
-              <p><span class="emphasis">Skills Used</span><br />
-              Javascript, Jquery, CSS</p>
-            </div>
-            <p><span class="emphasis">Description</span><br /> This a videogame quiz, done in JQuery</p>
-            <button onclick="window.location='https://github.com/Frankcarvajal/2.1_2.2/tree/master/quizapp';">GitHub</button>
-            <button>Live</button>
-          </div>
-        </article>
-
+         <hr>
         <article class="project-container">
           <div class="project-title mobile">
             <h2>adoptMe</h2>
-            <p><span class="emphasis">Skills Used</span><br />Javascript, NodeJS, MongoDB, Mongoose, CSS, Passport, React, Redux</p>
+            <p><i>Javascript, NodeJS, MongoDB, Mongoose, CSS, Passport, React, Redux</i></p>
           </div>
-          <div class="image-container">
             <img src="assets/images/adoptme.jpg">
-          </div>
           <div class="info-container">
             <div class="project-title">
               <h2>adoptMe</h2>
-              <p><span class="emphasis">Skills Used</span><br />
+              <p>
               Javascript, NodeJS, MongoDB, Mongoose, CSS, Passport, React, Redux</p>
             </div>
             <p><span class="emphasis">Description</span><br /> This is an pet adoption website. Meant to function as a hub for pet shelters and pet seekers </p>
@@ -98,26 +81,45 @@
             <button onclick="window.location='https://lit-caverns-27597.herokuapp.com/';">Live</button>
           </div>
         </article>
-                <article class="project-container">
+         <hr>
+        <article class="project-container">
           <div class="project-title mobile">
-            <h2>adoptMe</h2>
+            <h2>Hanzi</h2>
             <p><span class="emphasis">Skills Used</span><br />Javascript, NodeJS, MongoDB, Mongoose, CSS, Passport, React, Redux</p>
           </div>
-          <div class="image-container">
-            <img src="assets/images/mandarinx.jpg">
-          </div>
+            <img src="assets/images/hanzi.jpg">
           <div class="info-container">
             <div class="project-title">
-              <h2>Mandarin X</h2>
+              <h2>Hanzi</h2>
               <p><span class="emphasis">Skills Used</span><br />
               Javascript, NodeJS, MongoDB, Mongoose, CSS, Passport, React, Redux, OAuth2</p>
             </div>
             <p><span class="emphasis">Description</span><br /> This is a spaced repetition, language learning app </p>
-            <button onclick="window.location='https://github.com/cfv7/mandarinx';">GitHub</button>
-            <button onclick="window.location='https://agile-refuge-59500.herokuapp.com/';">Live</button>
+            <button onclick="window.location='https://github.com/cfv7/hanzi';">GitHub</button>
+            <button onclick="window.location='https://hanzi-app.herokuapp.com/';">Live</button>
           </div>
         </article>
-      </div>
+        <hr>
+        <article class="project-container">
+          <div class="project-title mobile">
+              <h2>Flixzon</h2>
+              <p>Javascript, Ajax, Jquery, CSS</p>
+          </div>
+            <img src="assets/images/flixzon.jpg" alt="flixzon image" />
+          <div class="info-container">
+            <div class="project-title">
+              <h2>Flixzon</h2>
+              <p>Javascript, Ajax, Jquery, CSS</p>
+            </div>
+            <p><span class="emphasis">Description</span><br />A video search app that tells you if a video is available on either Netflix or Hulu. <br />
+            <b>NOTE: API is switching services soon and might become unavailable</b></p>
+            <div class="button-container">
+              <button onclick="window.location='https://github.com/wshuang6/capstone-vid-search';">GitHub</button>
+              <button onclick="window.location='https://flixzon.herokuapp.com/';">Live</button>
+            </div>
+          </div>
+        </article>
+      <!--</div>-->
     </section>
     <footer>
       <div class="contact-container"> 
@@ -137,7 +139,8 @@
         </div>
       </div>
     </footer>
-  </div>
+    </div>
+
   
 </body>
 </html>
