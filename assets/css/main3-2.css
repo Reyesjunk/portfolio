@@ -42,9 +42,11 @@ h3 {
   font-size: 1.414em;
 }
 img{
-  height: 200px;
+  height: 250px;
   border: 1px solid gainsboro;
   border-radius: 9px;
+  margin-right: 10%;
+  margin-top: 6px;
   
 }
 
@@ -87,7 +89,7 @@ button:hover, a:visited, a:link{
 .intro-section p {
   color: white;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 150%;
 }
 .project-container {
   padding-left: 0;
@@ -119,14 +121,15 @@ article.intro h2{
  background-size: cover; 
 }
 .about-me-section{
-  margin-left: 30%;
-  margin-right: 20%;
+  margin-left: 40%;
+  margin-right: 15%;
   padding-top: 30px;
   padding-bottom: 50px;
 }
 
 .about-me-section p {
   color: white;
+  line-height: 150%
 }
 
 .skills h2{
@@ -164,7 +167,6 @@ article.intro h2{
   display: inline-block;
   vertical-align: top;
   width: 300px;
-  margin-left: 100px;
 }
 .break{
   display: none;
@@ -204,12 +206,13 @@ footer h1 {
   color: #5D5D5D;
 }
 
-/*@media only screen and (min-width: 769px) and (max-width: 1000px) {
-  button{
-    width: 30%;
-    margin-bottom: 8px;
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+  .about-me-section{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
   }
-}*/
+}
 /*@media only screen and (min-width: 769px) and (max-width: 1200px)  {
    .intro-section, .project-container {
      padding-left: 10%;
