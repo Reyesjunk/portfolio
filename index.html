@@ -6,8 +6,8 @@
  
  <meta property="og:locale" content="en_US" />
  <meta property="og:type" content="website" />
- <meta property="og:title" content="Ramon Reyes Portfolio"/>
- <meta property="og:description" content="My portfolio webpage"/>
+ <meta property="og:title" content="Portfolio"/>
+ <meta property="og:description" content="My portfolio website. Have a look at my most recent projects."/>
  <meta property="og:image" content="http://ramonrey.es/assets/images/portfolio-thumbnail.png">
  <meta property="og:image:width" content="500" />
  <meta property="og:image:height" content="400" />
@@ -17,35 +17,66 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/main3-2.css" />
   
-  <link rel="javascript" href="assets/javascript/main.js" />
   <title>Ramon Reyes</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:200,300,400" rel="stylesheet">
   <script src="https://use.fontawesome.com/31ee3a47d3.js"></script>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script> 
+  <script src="jquery.carouFredSel.js" type="text/javascript"></script>
 </head>
-<body>
+<body id="main">
    <div class="portfolio-container">
-    <section>
+     <header class="secondary-dark-blue-bg">
+       <div class="container">
+         <div class="row">
+           <a href="#" class="logo"><img src="assets/images/logo02.png" alt="logo"/></a> 
+           <nav class="menu" id="menu">
+             <ul>
+               <!--<li><a href="#">About Me</a></li>
+               <li><a href="#">Projects</a></li>-->
+               <li>
+                 <a href="mailto:reyesjunk@gmail.com?Subject=I%20Want%20to%20hire%20you!" target="_top">
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                 </a>
+              </li>
+               <li>
+                 <a href="https://www.linkedin.com/in/ramon-reyes-20806b50/">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                 </a>
+               </li>
+               <li>
+                 <a href="https://github.com/Reyesjunk">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                 </a>
+               </li>
+               <li>
+                 <a href="https://reyesjunk.github.io/portfolio/assets/images/RamonResume.pdf">
+                  <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                 </a>
+               </li>
+             </ul>
+           </nav> 
+         </div> 
+       </div>    
+     </header>
     <div class="intro-section-wrapper">
-    <section class = "intro-section">
+    
+    <!--<section class = "intro-section">
       <article class = "intro">
         
         <p> Salut, I am <span class="highlight">Ramon Reyes</span>,<br /> a <span class="highlight">Fullstack Developer</span> and <span class="highlight">Graphic Designer</span></p>
       </article>
-    </section>
+    </section>-->
     </div>
-    <div class="about-me-section-wrapper">
-    <section class="about-me-section">
+    <div class="about-me-section-wrapper" data-stellar-background-ratio="0.5">
+    <section class="about-me-section" >
       <article class="about-me">
-        <h1>About me</h1>
-        <p>Languages: Javascript, Python<br />
-          Frameworks: React, Redux, NodeJs, JQuery</p>
+        <h1>Hello, salut, and 你好</h1>
         <p>My name is Ramon Reyes. I am a New York City based full stack web developer. and recent graduate of the Web Development bootcamp at Thinkful. I love coding and the challenging problems it allows me to solve. I focus on collaboration and how working together lets us tackle new and important issues and build creative solutions.</p> 
         <p>In my free time I draw and explore diverse cultures.</p>
       </article>
       <article class="skills">
-        <h2>Skills: Javascript, React, Redux, MongoDB, Postgress, JQuery, Html/CSS</h2>
+        <h2>Skills: Javascript, React, Redux, MongoDB, PostgreSQL, JQuery, Html/CSS, Socket.io,   Adobe Suite </h2>
 
       </article>
     </section>
@@ -161,7 +192,8 @@
       </div>
     </footer>
     </div>
+      <script rel="text/javascript" src="assets/javascript/stellar.min.js"></script>
+      <script rel="text/javascript" src="assets/javascript/main.js"></script>
 
-  
 </body>
 </html>
